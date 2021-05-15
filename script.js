@@ -8,6 +8,12 @@ const bookmarksContainer = document.getElementById('bookmarks-container');
 
 let bookmarks = [];
 
+//Date time function
+function dateTime() {
+    var date = new Date();
+    document.getElementById("date-time").innerText = date;
+}
+dateTime();
 //  Show modal, focus on first input
 function showModal() {
     modal.classList.add('show-modal');
